@@ -1,0 +1,39 @@
+
+
+<** block commants
+style 1:
+	registers:				reg
+	immediate:
+		Bin:				#%number	this is in 6502 style
+		Dec:				#number 
+		Hex:				#$number
+	Addressing:
+		immediate Address:	#imm:[#imm]
+		Segment:			DAS:[reg]
+		Segment + disp:		DAS:[reg + #imm]
+		Lable address:		@Lable
+
+Lable
+	define lable:				lable:
+	
+	define a lable as private	.lable:
+								local lable		; or use a directive
+
+	make a lable global			global lable
+
+asm directives non
+	global
+	byte
+	word
+	dword
+**>
+
+; single commants
+
+
+ldi word R0, #$55AA		; loads 0x55AA into R0
+; R0 = 0x55AA
+; c style variabel = value
+
+
+
